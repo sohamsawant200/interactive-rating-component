@@ -29,7 +29,7 @@
   <body>
     <!-- Rating state start -->
 
-    <div class="container">
+    <div class="container" id="beforeRate">
       <div class="icon-star">
         <svg width="17" height="16" xmlns="http://www.w3.org/2000/svg">
           <path
@@ -46,15 +46,16 @@
       </div>
 
       <div class="rating">
-        <button>1</button>
-        <button>2</button>
-        <button>3</button>
-        <button>4</button>
-        <button>5</button>
+        <button id="1">1</button>
+        <button id="2">2</button>
+        <button id="3">3</button>
+        <button id="4">4</button>
+        <button id="5">5</button>
       </div>
 
-      <div class="submit">
-        <button>SUBMIT</button>
+      <div id="submit" class="flex-center">
+        <!-- <button>SUBMIT</button> -->
+        <p>SUBMIT</p>
       </div>
     </div>
 
@@ -62,7 +63,7 @@
 
     <!-- Thank you state start -->
 
-    <div class="thankyou none">
+    <div class="thankyou none" id="afterRate">
       <div class="thankyou-img">
         <svg width="162" height="108" xmlns="http://www.w3.org/2000/svg">
           <g fill="none">
@@ -155,10 +156,10 @@
         </svg>
       </div>
 
-      <div class="rateResult">
-        You selected
-        <!-- Add rating here -->
-        out of 5
+      <div class="flex-center">
+        <div class="rateResult">
+          You selected<span id="rate"> * </span>out of 5
+        </div>
       </div>
 
       <div class="thankyou-header">Thank you!</div>
@@ -178,5 +179,6 @@
       >. Coded by <a href="#">Soham Sawant</a>.
     </div>
 
+    <script src="script.js"></script>
   </body>
 </html>
